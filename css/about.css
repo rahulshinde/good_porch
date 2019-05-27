@@ -1,22 +1,20 @@
 body{
-  background: url(../img/bg/yellow_brick.svg);
-  background-color: #ffda00;
-  background-attachment: fixed;
-  background-size: 3rem;
+  background-color: #fff;
 }
 
 #about_text{
-  margin-top: 4.3rem;
-  padding: 0.5rem;
-  margin: 4.3rem 0.5rem 0 0.5rem;
-  background-color: #fff;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
   border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  border: 2px solid #000;
+  text-align: left; 
+  width: calc(100% - 2.4rem);
+  margin: 1.2rem 1.2rem 0 1.2rem;
+  position: relative;
+  z-index: 10;
 }
 
 #about_text p:not(.credits){
-  font-size: 1.6rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   /*margin-bottom: 1rem; */
 }
@@ -27,6 +25,39 @@ body{
   /*margin-bottom: 1rem; */
 }
 
+.credits{
+  margin-top: 3rem;
+  font-size: 0.6rem;
+}
+
 #about_text p a:hover{
   text-decoration: underline;
+}
+
+.about_image{
+  position: fixed;
+  pointer-events: none;
+}
+
+#about_pond{
+  top: 60%;
+  left: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+}
+
+#about_tile{
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4.85rem;
+}
+
+#about_gate{
+  bottom: 4.5rem;
+  width: 100%;
+  left: 0;
+  z-index: 10;
 }

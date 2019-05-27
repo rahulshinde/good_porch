@@ -2,25 +2,23 @@
 <html>
 <head>
   <title>Good Porch</title>
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/generic.css">
   <link rel="stylesheet" type="text/css" href="css/store.css">
 </head>
-<body>
+<body id="products_page">
   <header>
-    <figure id="header_logo">
-      <img src="img/logos/good_porch_nb.svg">
-    </figure>
+    <a class="nav_link header_image_link" href="index.html"><img class="header_image" id='terrace_logo' src="img/bg/terrace.svg"></a>
+    <a class="nav_link header_image_link" href="index.html"><img class="header_image" id='nav_house' src="img/bg/house.svg"></a>
     <nav>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#">Contributing Artists</a></li>
-        <li><a href="#">Orginizations</a></li>
-      </ul>
+      <a class="selected nav_link" href="store.html">Store</a>
+      <a class="nav_link" href="about.html">About</a>
+      <a class="nav_link" href="contributors.html">Contributing Artists</a>
     </nav>
   </header>
 
-  <main id="products">
+  <main class="products_container" id="products">
     <ul id="products_list">
       <li class="work_link_container">
         <figure class="work_figure">
@@ -144,7 +142,7 @@
     </ul>
   </main>
 
-  <main id="past_products">
+  <main class="products_container" id="past_products">
     <ul id="products_list">
       <li class="work_link_container sold_out">
         <figure class="work_figure">

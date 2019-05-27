@@ -1,39 +1,85 @@
 #homepage{
-  background-color: #65EAFF;
+  background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  opacity: 1;
-  transition: opacity ease 0.8s 0.6s, background-color ease 0.8s 0.6s; 
+  /*opacity: 1;*/
 }
 
-.logo_container{
+.scale_container img{
   position: fixed;
-  bottom: 0;
-  width: 50%;
-  height: auto;
-  margin: 0;
+}
+
+#awning{
+  position: fixed;
+  top:5vw;
+  width: 70%;
+  z-index: 10;
+  left: 15%;
+  z-index: 20;
+}
+
+.window{
+  max-width: 15%;
+  max-height: 40vh;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#window_l{
+  left: 5%;
+}
+
+#window_r{
+  right: 5%;
+}
+
+.door{
+  position: fixed;
   overflow: hidden;
-  transition: transform linear 1.4s;
-  -webkit-transition: transform linear 1.4s; 
+  bottom: 10vh;
+  width: 22%;
+  transition: transform ease 1s 0.4s;
   z-index: 10;
 }
 
-.logo_container img{
-  width: 200%;
-  transform: perspective(1000px) rotateY(0deg);
+#frame{
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 10vh;
+  width: 44%;
+  max-height: 60vh;
 }
 
-#good{
-  left: 0;
+.door img{
+  position: static;
+  width: 200%;
+  max-height: 60vh;
+  /*height: auto;*/
+}
+
+#door_l{
+  right: 50%;
   transform-origin: left center;
 }
 
-#porch{
-  right: 0;
+#door_r{
+  left: 50%;
   transform-origin: right center;
+}
+
+#door_r img{
+  transform: translateX(-50%);
+}
+
+#floor{
+  max-width: 100%;
+  max-height: 11vh;
+  bottom: 0;
+  left: 0;
 }
 
 #porch img{
@@ -45,47 +91,11 @@
   position: fixed;
 }
 
-#house,
-#door{
-  bottom: calc(20% - 1rem);
-  transform: perspective(2000px) translate(-50%, 0%);
-
-}
-
-#house{
-  left: 50%;
-  max-height: 80vh;
-  max-width: 80vw;
-  z-index: 1;
-}
-
-#door{
-  z-index: 4;
-  position: fixed;
-  left: 50%;
-  max-height: 53.5vh;
-  max-width: 16.5%;
-  transform-origin: right center;
-  transition: transform linear 0.7s 0.5s; 
-  -webkit-transition: transform linear 0.7s 0.5s;  
-}
-#floor{
+.scale_container{
   width: 100%;
-  height: 20%;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-}
-
-#home_container, #gate_container{
-  position:fixed;
-  margin: 0;
-  top: 0;
-  left: 0;
   height: 100vh;
-  width: 100vw;
   transform: scale(1);
-  opacity: 1;
+  transform-origin: center;
   transition: transform linear 1.4s; 
   -webkit-transition: transform linear 1.4s;
 }
@@ -94,18 +104,20 @@
   z-index: 4;
 }
 
-#homepage.open_gate{
+#homepage.fade_out{
   opacity: 0;
-  background-color: #fff;
 }
 
-.open_gate #home_container,
-.open_gate #gate_container{
+.open_gate .scale_container{
   transform: scale(2);
 }
 
-.open_gate #door{
-  transform: perspective(2000px) translate(-50%, 0%) rotateY(92deg);
+.open_gate #door_l{
+  transform: perspective(2000px) rotateY(-92deg);
+}
+
+.open_gate #door_r{
+  transform: perspective(2000px) rotateY(92deg);
 }
 
 .open_gate #good{

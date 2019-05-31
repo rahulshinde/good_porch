@@ -5,24 +5,20 @@
 
 
 .products_container{
-  background-size: 7rem;
-  background-repeat: repeat;
   transition: opacity;
-  background-image: url(../img/bg/tile.svg);
   background-attachment: fixed;
-  padding: 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 #past_products{
   position: relative;
-  padding-bottom: 3.5rem;
+  /*padding-bottom: 3.5rem;*/
 }
 
 #past_products:before{
   content: 'Series 1';
   display: inline-block;
   background-color: #fff;
-  border: 1px solid #000;
   padding: 0.5rem;
   margin-bottom: 1.75rem;
   font-size: 1.6rem;
@@ -40,23 +36,9 @@
   display: inline-block;
   width: calc(25% - 1.5rem);
   box-sizing: border-box;
-  background-color: #fff;
   margin-bottom: 1.85rem;
-  border: 1px solid #000;
   position: relative;
   /*z-index: 3;*/
-}
-
-.work_link_container:before{
-  content: '';
-  position: absolute;
-  top: -0.3rem;
-  left: -0.3rem;
-  right: -0.3rem;
-  bottom: -0.3rem;
-  border: 1px solid #000; 
-  background-color: #fff;
-  z-index: 0;
 }
 
 .work_link_container.sold_out .work_figure{  
@@ -80,7 +62,8 @@
   mix-blend-mode: multiply;
 }
 
-.work_link_container.sold_out:hover .work_links{
+.work_link_container.sold_out:hover .work_links,
+.work_link_container.sold_out .work_links{
   opacity: 0;
   pointer-events: none;
 }
@@ -98,36 +81,17 @@
   width: 100%;
 }
 
-.work_links{
-  pointer-events: none;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: calc(25vw);
-  padding: 1rem 0;
-  opacity: 0;
-  transition: opacity ease 0.25s;
-  background: radial-gradient(#fff, rgba(255,255,255,0));
-}
-
 .links_wrap{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: left;
 }
 .work_figure{
   position: relative;
   display: flex;
-  padding: 0.5rem;
-  border: 1px solid #000;
   box-sizing: border-box;
   z-index: 10;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .work_caption{
   font-size: 0.6rem;
@@ -135,12 +99,16 @@
 }
 
 .work_links a{
-  display: block;
+  display: inline-block;
   color: #000;
   text-decoration: none;
-  text-align: center;
+  text-align: left;
+  font-size: 0.6rem;
+  margin-top: 0.5rem;;
+  background-color: #fff;
+  padding: 0.25rem;
 }
 
 .work_links a:hover{
-  text-decoration: underline;
+  background-color: #ff0;
 }

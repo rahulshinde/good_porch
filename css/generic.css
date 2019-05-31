@@ -1,12 +1,13 @@
 html{
   font-size: 30px;
   font-family: serif;
-  font-weight: bold;
 }
 
 body{
   opacity: 0;
-  transition: opacity ease 0.8s, background-color ease 0.8s; 
+  transition: opacity ease 0.8s, background-color ease 0.8s;
+  background-color: #eee;
+  margin-top: 6rem; 
 }
 
 .visible{
@@ -16,19 +17,16 @@ body{
 header{
   position: fixed;
   left: 0rem;
-  bottom: 0;
+  top: 1rem;
   width: 100%;
   text-align: center;
   padding: 0.5rem 1.35rem;
   box-sizing: border-box;
-  background-color: rgba(255,255,255,1);
-  /*border-top: 1px solid #000;*/
-  background-color: transparent;
   z-index: 20;
 }
 
 body{
-  background-color: #fff;
+  background-color: #eee;
 }
 
 nav,
@@ -39,7 +37,7 @@ nav,
 }
 
 #terrace_logo{
-  height: 1.5rem;
+  height: 3rem;
   left: 1.35rem;
 }
 
@@ -71,7 +69,6 @@ nav a:visited{
   color: #000;
   background-color: #fff;
   padding: 0.25rem;
-  border: 1px solid #000;
   font-size: 0.6rem;
   margin-left: 1rem;
 }

@@ -1,7 +1,3 @@
-body{
-  background-color: #fff;
-}
-
 #about_text{
   margin-top: 1.2rem;
   margin-left: 1.2rem;
@@ -26,7 +22,7 @@ body{
 }
 
 .credits{
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-size: 0.6rem;
 }
 

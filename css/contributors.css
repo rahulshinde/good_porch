@@ -1,21 +1,9 @@
-#contributors_container{
-  position: fixed;
-  background-size: 3rem;
-  padding: 0 1rem 1rem 1rem;
-  top: 3rem;
-  left: 1.2rem;
-  right: 1.2rem;
-  overflow-y: auto;
-  bottom: 6rem;
-  background-color: #fff;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
 
 .contributors{
   display: block;
   margin-bottom: 3rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 .contributors h2,
@@ -25,14 +13,12 @@
 
 h1.contributors_heading{
   border-bottom: 1px solid #000;
-  padding-top: 1.25rem;
   padding-bottom: 0.25rem;
   margin-bottom: 1.25rem;
   font-size: 1.6rem;
-  background-color: #fff;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  font-style: italic;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
 }
 
 .contributors h2{
@@ -56,13 +42,8 @@ h1.contributors_heading{
 }
 
 #flowers{
-  bottom: -4rem;
-}
-
-#top{
-  top: -2rem;
-  left: 1.2rem;
-  right: 1.2rem;
-  width: calc(100% - 2.4rem);
-  height: 5rem;
+  width: 10rem;
+  bottom: 0rem;
+  right: 15%;
+  max-height: 80vh;
 }
